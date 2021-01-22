@@ -1,7 +1,8 @@
-# GitHub-Enhanced
-Google Chrome extension that adds nice-to-have features to GitHub.
+**Github Enhanced** is a Google Chrome extension providing (few) quality-of-live improvements to GitHub.
 
-## List of Features
+-----
+
+## Feature List
 
 **Augment list of repository forks with more data.**
 

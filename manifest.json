@@ -1,0 +1,32 @@
+{
+  "name": "Github Enhanced",
+  "version": "0.1",
+  "manifest_version": 2,
+  "description": "Google Chrome extension that adds nice-to-have features to GitHub.",
+  "homepage_url": "https://github.com/Erroler",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/*/network/members"
+      ],
+      "js": [
+        "src/main.js"
+      ],
+      "css": [
+        "src/style.css"
+      ]
+    }
+  ]
+}
